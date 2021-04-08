@@ -13,13 +13,13 @@
                 <a href="index.php"><button style="width:130px;heigh:25px" class="btn-hover color-8">Home</button> </a>
               </li>
               <li class="nav-item">
-                <a href="index.php"><button style="width:130px;heigh:25px"class="btn-hover color-8">Create User</button>  </a>
+                <a href="createuser.php"><button style="width:130px;heigh:25px"class="btn-hover color-8">Create User</button>  </a>
               </li>
               <li class="nav-item">
-                <a href="index.php"><button style="width:200px;" class="btn-hover color-8">Transfer Money</button>  </a>
+                <a href="transaction.php"><button style="width:200px;" class="btn-hover color-8">Transfer Money</button>  </a>
               </li>
               <li class="nav-item">
-                <a href="index.php"><button style="width:200px;" class="btn-hover color-8">Transaction History</button>  </a>
+                <a href="history.php"><button style="width:200px;" class="btn-hover color-8">Transaction History</button>  </a>
               </li>
                
           </div>
