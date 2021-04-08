@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
 
     <title>Basic Banking System</title>
   </head>
@@ -17,7 +17,48 @@
   <?php
   include 'header.php';
   ?>
+
+  <div class="container">
+    <div class="row">
+            <div class="col-sm-12 col-md">
+                <div class="heading text-center my-5">
+                    <br/> 
+                    <h2>Welcome to</h2>
+                    <h1>SPARKS BANK</h1>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md img text-center">
+            <img src="assets/img/bank.png" class="img-fluid pt-2">
+            </div>
+    </div> 
+    
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="heading text-center my-5">
+                <img style="width:200px;height:130px;" src="assets/img/user.png" class="img-fluid">   
+                <a href="index.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-1">Create-User</button>  </a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="heading text-center my-5">
+                <img style="width:200px;height:130px;" src="assets/img/transaction.png" class="img-fluid">  
+                <a href="index.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-2">Make a Transaction</button>  </a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="heading text-center my-5"> 
+                <img style="width:200px;height:130px;" src="assets/img/history.png" class="img-fluid"> 
+                <a href="index.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-3">Transaction History</button>  </a>
+            </div>
+        </div>
+  </div>
+
+  </div>
   
+  <?php
+  include 'footer.php';
+  ?>
       
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
