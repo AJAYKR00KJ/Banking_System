@@ -10,26 +10,78 @@
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="assets/css/createuser.css">
 
     <title>Basic Banking System</title>
   </head>
 
   <body>
 
+
+  <?php
+    include 'config/dbconfig.php'; 
+
+    if(isset($_POST['submit'])){
+       
+      
+
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $balance=$_POST['balance'];
+    $sql="insert into users(name,email,balance) values('{$name}','{$email}','{$balance}')";
+    $result=mysqli_query($conn,$sql);
+    if($result){
+               echo "<script> alert('Hurray! User created');
+                               window.location='transfermoney.php';
+                     </script>";
+                    
+    }
+  }
+?>
+
   <?php
   include 'header.php';
   ?>
+ 
 
+  <div class="background">
   <div class="container">
-        <div class="row">
-                <div class="col-sm-12 col-md">
-                    <div class="heading text-center my-5">
-                        <br/> 
-                        <h2>Create User</h2> 
-                    </div>
-                </div>    
-        </div>  
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <img class="img-fluid" src="assets/img/user.png" style="border: none; border-radius: 50%;">
+        </div>
+        <div class="screen-body-item">
+          <form class="app-form" method="post"> 
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Enter NAME" type="text" name="name" required>
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Enter EMAIL" type="email" name="email" required>
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="Type BALANCE" type="number" name="balance" required>
+            </div>  
+            <div style="text-align:center;">  
+
+            <input type="submit" name="submit" value="CREATE" style="height:35px;border-radius: 4px;" class="btn-hover color-2"></input>
+              <input type="reset" name="reset" valur="RESET" style="height:35px;border-radius: 4px;" class="btn-hover color-7"></input> 
+          
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
   
   <?php
   include 'footer.php';
