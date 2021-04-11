@@ -101,7 +101,7 @@ if(isset($_POST['submit']))
   include 'header.php';
   ?>
 
-	<div class="container">
+<div class="container">
         <h2 class="text-center pt-4">Transaction</h2>
             <?php
                 include 'config/dbconfig.php';
@@ -114,7 +114,8 @@ if(isset($_POST['submit']))
                 }
                 $rows=mysqli_fetch_assoc($result);
             ?>
-            <form method="post" name="tcredit" class="tabletext" ><br>
+    <form method="post" name="tcredit" class="tabletext" >
+        <br>
         <div>
             <table class="table table-striped table-condensed table-bordered">
                 <tr>
@@ -132,7 +133,7 @@ if(isset($_POST['submit']))
             </table>
         </div>
         <br><br><br>
-        <label>Transfer To:</label>
+        <label><b>Transfer To:</b></label>
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
             <?php
@@ -154,27 +155,21 @@ if(isset($_POST['submit']))
                 </option>
             <?php 
                 } 
-            ?>
-            <div>
+            ?> 
         </select>
         <br>
         <br>
-            <label>Amount:</label>
-            <input type="number" class="form-control" name="amount" required>   
-            <br><br>
-                <div class="text-center" >
-            <button class="btn mt-3" name="submit" type="submit" id="myBtn">Transfer</button>
-            </div>
-        </form>
-    </div>
+            <label><b>Enter Amount:<b></label>
+            <input type="number" name="amount" required>    
+            <button name="submit" type="submit" id="myBtn" style="width:140px;height:35px;border-radius: 4px;" class="btn-hover color-3">Transfer NOW</button>   
+                
+    </form>
+</div>
     
-    <?php
+<?php
   include 'footer.php';
-  ?>
-      
-      <script>
-  AOS.init();
-</script>
+?>
+       
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>   
   </body>

@@ -33,7 +33,7 @@
     $result=mysqli_query($conn,$sql);
     if($result){
                echo "<script> alert('Hurray! User created');
-                               window.location='transfermoney.php';
+                               window.location='transaction.php';
                      </script>";
                     
     }
