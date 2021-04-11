@@ -64,7 +64,7 @@
                         <td class="py-2"><?php echo $rows['email']?></td>
                         <td class="py-2"><b><?php echo $rows['balance']?></b></td>
                         
-                        <td><a href="selecteduserdetail.php?id= <?php echo $rows['id'] ;?>">  <button style="width:76px;height:25px;border-radius: 4px;" class="btn-hover color-3">Transact</button></a></td> 
+                        <td><a href="transact.php?id= <?php echo $rows['id'] ;?>">  <button style="width:76px;height:25px;border-radius: 4px;" class="btn-hover color-3">Transact</button></a></td> 
                     </tr>
                 <?php
                     }

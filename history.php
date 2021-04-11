@@ -21,15 +21,49 @@
   ?>
 
   <div class="container">
-        <div class="row">
-                <div class="col-sm-12 col-md">
-                    <div class="heading text-center my-5">
-                        <br/> 
-                        <h2>History</h2> 
-                    </div>
-                </div>    
-        </div>  
-  </div>
+        <h2 class="text-center pt-4">Transaction History</h2>
+        
+       <br>
+       <div class="table-responsive-sm">
+    <table class="table table-hover table-striped table-condensed table-bordered">
+        <thead>
+            <tr>
+                <th class="text-center">S.No.</th>
+                <th class="text-center">Sender</th>
+                <th class="text-center">Receiver</th>
+                <th class="text-center">Amount</th>
+                <th class="text-center">Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+
+            include 'config/dbconfig.php';
+
+            $sql ="select * from transaction";
+
+            $query =mysqli_query($conn, $sql);
+
+            while($rows = mysqli_fetch_assoc($query))
+            {
+        ?>
+
+            <tr>
+            <td class="py-2"><?php echo $rows['sno']; ?></td>
+            <td class="py-2"><b><?php echo $rows['sender']; ?></b></td>
+            <td class="py-2"><b><?php echo $rows['receiver']; ?></b></td>
+            <td class="py-2"><b><?php echo $rows['balance']; ?> </b></td>
+            <td class="py-2"><?php echo $rows['datetime']; ?> </td>
+                
+        <?php
+            }
+
+        ?>
+        </tbody>
+    </table>
+
+    </div>
+   </div>
   
   <?php
   include 'footer.php';
