@@ -12,24 +12,70 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Basic Banking System</title>
+
+    <style type="text/css">
+      button{
+        transition: 1.5s;
+      }
+      button:hover{
+        background-color:#616C6F;
+        color: white;
+      }
+    </style>
+
   </head>
 
+   
   <body>
+
+  <?php
+    include 'config/dbconfig.php';
+    $sql = "SELECT * FROM users";
+    $result = mysqli_query($conn,$sql);
+  ?>
 
   <?php
   include 'header.php';
   ?>
 
-  <div class="container">
-        <div class="row">
-                <div class="col-sm-12 col-md">
-                    <div class="heading text-center my-5">
-                        <br/> 
-                        <h2>Transaction</h2> 
+      <div class="container">
+        <h2 class="text-center pt-4">Transfer Money</h2>
+        <br>
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive-sm">
+                    <table class="table table-hover table-sm table-striped table-condensed table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col" class="text-center py-2">Id</th>
+                            <th scope="col" class="text-center py-2">Name</th>
+                            <th scope="col" class="text-center py-2">E-Mail</th>
+                            <th scope="col" class="text-center py-2">Balance</th>
+                            <th scope="col" class="text-center py-2">Operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                <?php 
+                    while($rows=mysqli_fetch_assoc($result)){
+                ?>
+                    <tr>
+                        <td class="py-2"><b><?php echo $rows['id'] ?></b></td> 
+                        <td class="py-2"><?php echo $rows['name']?></td>
+                        <td class="py-2"><?php echo $rows['email']?></td>
+                        <td class="py-2"><b><?php echo $rows['balance']?></b></td>
+                        
+                        <td><a href="selecteduserdetail.php?id= <?php echo $rows['id'] ;?>">  <button style="width:76px;height:25px;border-radius: 4px;" class="btn-hover color-3">Transact</button></a></td> 
+                    </tr>
+                <?php
+                    }
+                ?>
+            
+                        </tbody>
+                    </table>
                     </div>
-                </div>    
-        </div>  
-  </div>
+                </div>
+            </div> 
+      </div>
   
   <?php
   include 'footer.php';
