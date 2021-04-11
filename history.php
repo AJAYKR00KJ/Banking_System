@@ -39,17 +39,18 @@
         <?php
 
             include 'config/dbconfig.php';
-
+           
             $sql ="select * from transaction";
 
             $query =mysqli_query($conn, $sql);
-
+            $sno = 0 ;
             while($rows = mysqli_fetch_assoc($query))
             {
+              $sno= $sno+1;
         ?>
-
+             
             <tr>
-            <td class="py-2"><?php echo $rows['sno']; ?></td>
+            <td class="py-2"><?php echo $sno ?></td>
             <td class="py-2"><b><?php echo $rows['sender']; ?></b></td>
             <td class="py-2"><b><?php echo $rows['receiver']; ?></b></td>
             <td class="py-2"><b><?php echo $rows['balance']; ?> </b></td>
