@@ -16,7 +16,7 @@
                 <a href="createuser.php"><button style="width:130px;heigh:25px"class="btn-hover color-8">Create User</button>  </a>
               </li>
               <li class="nav-item">
-                <a href="transaction.php"><button style="width:200px;" class="btn-hover color-8">Transfer Money</button>  </a>
+                <a href="users.php"><button style="width:200px;" class="btn-hover color-8">View All Customers</button>  </a>
               </li>
               <li class="nav-item">
                 <a href="history.php"><button style="width:200px;" class="btn-hover color-8">Transaction History</button>  </a>

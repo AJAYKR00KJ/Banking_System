@@ -67,7 +67,7 @@ if(isset($_POST['submit']))
 
                 if($query){
                      echo "<script> alert('Transaction Successful');
-                                     window.location='history.php';
+                                     window.location='users.php';
                            </script>";
                     
                 }
