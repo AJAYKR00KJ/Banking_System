@@ -178,7 +178,7 @@
       </header>
 
       <div class="card_body">
-      <a href="transact.php?id= <?php echo $_SESSION["id"] ?>">  <button style="width:198px;height:25px;border-radius: 4px;" class="btn-hover color-3">Transfer Money</button></a> 
+      <a href="transact.php?id= <?php echo $_SESSION["id"] ?>">  <button style="width:175px;height:25px;border-radius: 4px;" class="btn-hover color-3">Transfer Money</button></a> 
       </div>   
       </div> 
 		</div>
