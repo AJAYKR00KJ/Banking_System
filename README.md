@@ -67,7 +67,7 @@ A Web Application used to transfer money between multiple users (Project contain
 
 *  Run XAMPP server by opening XAMPP application
      ``` bash
-         Run Apache molule.
+         Run Apache module.
          For Php MyAdmin run MySQL server. 
      ```     
 *  Run the project on local server by this link
