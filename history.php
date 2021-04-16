@@ -40,7 +40,7 @@
 
             include 'config/dbconfig.php';
            
-            $sql ="select * from transaction";
+            $sql ="select * from transaction order by sno DESC";
 
             $query =mysqli_query($conn, $sql);
             $sno = 0 ;
