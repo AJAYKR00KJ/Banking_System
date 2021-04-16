@@ -28,8 +28,8 @@ button,input {
   align-items: center;
   padding: 10px 20px;
   background: #6975DE;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  /* border-top-left-radius: 15px; */
+  border-top-right-radius: 32px;
 }
 
 .screen-header-right {
