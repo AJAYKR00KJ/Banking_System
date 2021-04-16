@@ -1,18 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 .nav-link{
 	margin-right: 15px;
-	color:#2F363F;
+	/* color:#2F363F; */
 	letter-spacing: 0.5px;
 	transition: 0.5s;
 }
 .navbar-brand{
-	color: #4C4B4B;
+	/* color: #4C4B4B; */
 	letter-spacing: 0.5px;
 }
 h2{
-	color: #4C4B4B;
+	/* color: #4C4B4B; */
 	letter-spacing: 0.5px;
 	font-family: raleway;
+}
+
+
+/************ Body Background **************/
+body {
+	background: linear-gradient(-45deg, #ee7752, #81415a, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /************ stylish buttons **************/

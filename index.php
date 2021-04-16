@@ -24,7 +24,7 @@
     <div class="row">
             <div class="col-sm-12 col-md">
                 <div class="heading text-center my-5">
-                    <br/> 
+                  
                     <h2>Welcome to</h2>
                     <h1>SPARKS BANK</h1>
                 </div>
@@ -39,19 +39,19 @@
         <div data-aos="zoom-in-up" class="col-sm-12 col-md-12 col-lg-4">
             <div class="heading text-center my-5">
                 <img style="width:200px;height:130px;" src="assets/img/user.png" class="img-fluid">   
-                <a href="createuser.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-1">Create-User</button>  </a>
+                <a href="createuser.php"><button style="width:180px;height:40px;border-radius: 4px;" class="btn-hover color-1">Create-User</button>  </a>
             </div>
         </div>
         <div data-aos="zoom-in-down" class="col-sm-12 col-md-12 col-lg-4">
             <div class="heading text-center my-5">
                 <img style="width:200px;height:130px;" src="assets/img/transaction.png" class="img-fluid">  
-                <a href="users.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-2">View All Customers</button>  </a>
+                <a href="users.php"><button style="width:180px;height:40px;border-radius: 4px;" class="btn-hover color-2">View All Customers</button>  </a>
             </div>
         </div>
         <div data-aos="zoom-in" class="col-sm-12 col-md-12 col-lg-4">
             <div class="heading text-center my-5"> 
                 <img style="width:200px;height:130px;" src="assets/img/history.png" class="img-fluid"> 
-                <a href="history.php"><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-3">Transaction History</button>  </a>
+                <a href="history.php"><button style="width:180px;height:40px;border-radius: 4px;" class="btn-hover color-3">Transaction History</button>  </a>
             </div>
         </div>
   </div>

@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light">
       <a href="index.php" ><button style="width:200px;height:55px;border-radius: 4px;" class="btn-hover color-1">SPARKS BANK</button></a>  
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
