@@ -35,7 +35,7 @@
   <?php
     session_start();
     include 'config/dbconfig.php';
-    $sql = "SELECT * FROM users";
+    $sql = "SELECT * FROM users order by id DESC";
     $result = mysqli_query($conn,$sql);
   ?>
 
