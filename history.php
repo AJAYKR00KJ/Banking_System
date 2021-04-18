@@ -32,7 +32,7 @@
                 <th class="text-center">Sender</th>
                 <th class="text-center">Receiver</th>
                 <th class="text-center">Amount</th>
-                <th class="text-center">Date & Time</th>
+                <th class="text-center">Date & Time (UTC)</th>
             </tr>
         </thead>
         <tbody>
