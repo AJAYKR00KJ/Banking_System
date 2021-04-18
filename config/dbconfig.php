@@ -3,10 +3,14 @@
  
 //Port number: 3306
 
-$servername = "sql6.freesqldatabase.com";
-$username = "sql6404877";
-$password = "zWv8XzWmRq";
-$database = "sql6404877"; 
+$servername = "remotemysql.com";
+$username = "odyRad1WFa";
+$password = "LQFjOeTaEH";
+$database = "odyRad1WFa"; 
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $database = "spark_foundation";
 
 $conn = mysqli_connect($servername, $username, $password, $database); 
 	if(!$conn){
